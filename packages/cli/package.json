@@ -1,0 +1,23 @@
+{
+  "name": "@pkg/cli",
+  "version": "0.1.0",
+  "description": "Command line interface for rapid npm package development",
+  "keywords": [
+    "npm-pkg",
+    "pkg",
+    "cli"
+  ],
+  "author": "suanmei <code_lee@sina.com>",
+  "homepage": "https://suanmei.github.io/npm-pkg-cli/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suanmei/npm-pkg-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/suanmei/npm-pkg-cli/issues"
+  }
+}

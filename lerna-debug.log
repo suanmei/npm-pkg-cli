@@ -1,0 +1,44 @@
+11 error Error: Command failed: git rev-list --count --all --max-count=1
+11 error usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
+11 error   limiting output:
+11 error     --max-count=<n>
+11 error     --max-age=<epoch>
+11 error     --min-age=<epoch>
+11 error     --sparse
+11 error     --no-merges
+11 error     --min-parents=<n>
+11 error     --no-min-parents
+11 error     --max-parents=<n>
+11 error     --no-max-parents
+11 error     --remove-empty
+11 error     --all
+11 error     --branches
+11 error     --tags
+11 error     --remotes
+11 error     --stdin
+11 error     --quiet
+11 error   ordering output:
+11 error     --topo-order
+11 error     --date-order
+11 error     --reverse
+11 error   formatting output:
+11 error     --parents
+11 error     --children
+11 error     --objects | --objects-edge
+11 error     --unpacked
+11 error     --header | --pretty
+11 error     --abbrev=<n> | --no-abbrev
+11 error     --abbrev-commit
+11 error     --left-right
+11 error     --count
+11 error   special purpose:
+11 error     --bisect
+11 error     --bisect-vars
+11 error     --bisect-all
+11 error
+11 error
+11 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:174:9)
+11 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:338:15)
+11 error     at Object.execSync (/usr/local/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:22:16)
+11 error     at isAnythingCommitted (/usr/local/lib/node_modules/lerna/node_modules/@lerna/version/lib/is-anything-committed.js:11:35)
+11 error     at VersionCommand.initialize (/usr/local/lib/node_modules/lerna/node_modules/@lerna/version/index.js:80:10)
