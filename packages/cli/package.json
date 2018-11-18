@@ -9,6 +9,9 @@
   ],
   "author": "suanmei <code_lee@sina.com>",
   "homepage": "https://suanmei.github.io/npm-pkg-cli/",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -19,5 +22,6 @@
   },
   "bugs": {
     "url": "https://github.com/suanmei/npm-pkg-cli/issues"
-  }
+  },
+  "gitHead": "6a226344617557ae54b54f5282d355c7084ad4c9"
 }
