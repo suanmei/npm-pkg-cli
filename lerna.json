@@ -2,12 +2,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent",
-  "changelog": {
-    "labels": {
-      "feat": ":rocket: New Feature",
-      "bug": ":bug: Bug Fix",
-      "docs": ":memo: Documentation"
-    }
-  }
+  "version": "independent"
 }
