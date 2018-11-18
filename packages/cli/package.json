@@ -1,5 +1,5 @@
 {
-  "name": "@pkg/cli",
+  "name": "@npm-pkg/cli",
   "version": "0.1.2",
   "description": "Command line interface for rapid npm package development",
   "keywords": [
