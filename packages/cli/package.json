@@ -22,5 +22,6 @@
   },
   "bugs": {
     "url": "https://github.com/suanmei/npm-pkg-cli/issues"
-  }
+  },
+  "devDependencies": {}
 }

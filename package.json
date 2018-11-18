@@ -1,6 +1,11 @@
 {
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suanmei/npm-pkg-cli.git"
+  },
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "lerna-changelog": "^0.8.2"
   }
 }
