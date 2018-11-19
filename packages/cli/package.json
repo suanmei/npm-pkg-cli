@@ -2,6 +2,9 @@
   "name": "@npm-pkg/cli",
   "version": "0.1.3",
   "description": "Command line interface for rapid npm package development",
+  "bin": {
+    "pkg": "bin/pkg.js"
+  },
   "keywords": [
     "npm-pkg",
     "pkg",
@@ -17,10 +20,15 @@
     "type": "git",
     "url": "git+https://github.com/suanmei/npm-pkg-cli.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/suanmei/npm-pkg-cli/issues"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "semver": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }

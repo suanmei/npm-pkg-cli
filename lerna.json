@@ -1,6 +1,7 @@
 {
+  "learn": "3.4.3",
   "packages": [
     "packages/*"
   ],
-  "version": "independent"
+  "version": "0.1.0"
 }
