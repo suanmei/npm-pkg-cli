@@ -1,4 +1,7 @@
+.vscode/
 node_modules
 .DS_Store
+*.tgz
 *.log
 temp
+.changelog
