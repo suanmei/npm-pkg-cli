@@ -6,7 +6,7 @@ const requiredVersion = require('../package').engines.node;
 
 function checkNodeVersion (wanted, id) {
   if (!semver.satisfies(process.version, wanted)) {
-    console.log(chalk.red(
+    console.log(chalk.redBright(
       'You are using Node ' + process.version + ', but this version of ' + id +
       ' requires Node ' + wanted + '.\nPlease upgrade your Node version.'
     ));
@@ -28,7 +28,7 @@ program
   .option('-p, --preset <presetName>', 'Skip prompts and use saved or remote preset')
   .option('-d, --default', 'Skip prompts and use default preset')
   .action((name, cmd) => {
-    // todo
+    console.log(cleanArgs(cmd));
   });
 
 // add some useful info on help
@@ -40,6 +40,22 @@ program.on('--help', () => {
 
 program.parse(process.argv);
 
+// Give a message without any input
 if (!process.argv.slice(2).length) {
   program.outputHelp();
+}
+
+// commander passes the Command object itself as options,
+// extract only actual options into a fresh object.
+function cleanArgs (cmd) {
+  const args = {};
+  cmd.options.forEach(o => {
+    const key = o.long.replace(/^--/, '');
+    // if an option is not present and Command has a method with the same name
+    // it should not be copied
+    if (typeof cmd[key] !== 'function' && typeof cmd[key] !== 'undefined') {
+      args[key] = cmd[key];
+    }
+  })
+  return args;
 }
